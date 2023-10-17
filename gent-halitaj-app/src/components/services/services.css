@@ -1,0 +1,71 @@
+.cards-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+.card-sevices{
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 3rem;
+    width: 23rem;
+    transition: var(--transition);
+}
+.card-sevices:hover{
+    transform: scale(1.01);
+}
+.card-sevices button{
+    color: var(--color-white);
+    font-size: larger;
+    font-weight: 700;
+    padding: 3.1rem ;
+    width: 23rem;
+    margin: -3rem -3rem 0 -3rem ;
+    background: var(--color-primary);
+    transition: var(--transition);
+    cursor: pointer;
+    
+}
+.card-sevices button:hover{
+    color: var(--color-white);
+    background: var(--color-bg-variant);
+    transition: var(--transition);
+    border: 1px solid var(--color-primary);
+}
+
+.services-info h5{
+    margin: 1.2rem 0 0 0;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+}
+.services-info{
+    border: 1px solid var(--color-bg-variant);
+    background: var(--color-bg);
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+/*===============MEDIA QUERY================*/
+
+@media screen and (max-width: 1030px){
+    .cards-services{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        display: grid;
+        justify-content: center;
+    }
+    }
+    @media screen and (max-width: 600px){
+        .card-services{
+            padding: 3rem;
+    width: 23rem;
+        }
+    
+    }
